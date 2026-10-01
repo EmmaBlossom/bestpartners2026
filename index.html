@@ -327,6 +327,26 @@ html{scroll-behavior:smooth}
   .zn-lang-switch a{min-width:27px;height:24px;padding:0 6px;font-size:10px}
   .zn-auth{display:none}
 }
+
+/* === Подкатегории: прокрутка без видимого ползунка === */
+.pr-category-nav{
+  flex-wrap:nowrap !important;
+  overflow-x:auto !important;
+  overflow-y:hidden !important;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:none;
+  -ms-overflow-style:none;
+}
+.pr-category-nav::-webkit-scrollbar{
+  display:none;
+  width:0;
+  height:0;
+}
+.pr-category-nav button{
+  flex:0 0 auto;
+  white-space:nowrap;
+}
+
 </style></head><body><header class="zn-topbar"><div class="zn-topbar__inner"><a class="zn-logo" href="./">ZORNET<span>.RU</span></a><nav class="zn-nav"><a href="#">Скрипты</a><a href="#">Шаблоны</a><a href="#">Форум</a><a href="#">HTML и CSS</a><a href="#">jQuery</a><a href="#">News</a></nav><div aria-label="Выбор языка" class="zn-lang-switch"><a aria-current="page" class="is-active" href="./" hreflang="ru" lang="ru">RU</a><span aria-hidden="true" class="zn-lang-switch__sep">/</span><a href="./en/" hreflang="en" lang="en">EN</a></div><div class="zn-auth">Вход / Регистрация</div></div></header><div class="zn-page"><main class="zn-main">
 <div class="pr-wrap">
 <div class="pr-breadcrumbs"><a href="#">ZorNet.Ru — сайт для вебмастера</a><span>»</span><a href="#">Партнерские программы</a><span>»</span>Рейтинг 2026</div>
