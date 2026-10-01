@@ -327,6 +327,26 @@ html{scroll-behavior:smooth}
   .zn-lang-switch a{min-width:27px;height:24px;padding:0 6px;font-size:10px}
   .zn-auth{display:none}
 }
+
+/* === Category navigation: scroll without visible scrollbar === */
+.pr-category-nav{
+  flex-wrap:nowrap !important;
+  overflow-x:auto !important;
+  overflow-y:hidden !important;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:none;      /* Firefox */
+  -ms-overflow-style:none;   /* old Edge / IE */
+}
+.pr-category-nav::-webkit-scrollbar{
+  display:none;              /* Chrome / Safari / Edge */
+  width:0;
+  height:0;
+}
+.pr-category-nav button{
+  flex:0 0 auto;
+  white-space:nowrap;
+}
+
 </style></head><body><header class="zn-topbar"><div class="zn-topbar__inner"><a class="zn-logo" href="../">ZORNET<span>.ORG</span></a><nav class="zn-nav"><a href="#">Scripts</a><a href="#">Templates</a><a href="#">Forum</a><a href="#">HTML &amp; CSS</a><a href="#">jQuery</a><a href="#">News</a></nav><div aria-label="Language selector" class="zn-lang-switch"><a href="../" hreflang="ru" lang="ru">RU</a><span aria-hidden="true" class="zn-lang-switch__sep">/</span><a aria-current="page" class="is-active" href="./" hreflang="en" lang="en">EN</a></div><div class="zn-auth">Sign in / Register</div></div></header><div class="zn-page"><main class="zn-main">
 <div class="pr-wrap">
 <div class="pr-breadcrumbs"><a href="#">ZorNet.org — Webmaster Resources</a><span>»</span><a href="#">Affiliate Programs</a><span>»</span>2026 Ranking</div>
