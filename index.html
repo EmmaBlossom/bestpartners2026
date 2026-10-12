@@ -372,6 +372,13 @@ html{scroll-behavior:smooth}
 @media(max-width:720px){.pr-title-row{gap:6px}.pr-title-updated{font-size:11px;gap:3px}}
 </style>
 <style>.pr-title-updated{align-items:center;vertical-align:middle}.pr-title-updated .pr-update-icon{display:block;flex:0 0 16px;width:16px;height:16px;overflow:visible}.pr-title-updated time{line-height:16px}</style>
+<style>
+/* Иконки показываются только вместе с заполненным значением. */
+.pr-mobile-stat:has(>b:empty),.pr-mobile-reviews:has(>b:empty){display:none!important}
+.pr-mobile-stats:not(:has(>.pr-mobile-stat>b:not(:empty))){display:none!important}
+.pr-seo-toggle .pr-seo-copy{font-size:14px;line-height:1.55}
+@media(max-width:760px){.pr-seo-toggle .pr-seo-copy{font-size:12px;line-height:1.4}}
+</style>
 </head><body><header class="zn-topbar"><div class="zn-topbar__inner"><a class="zn-logo" href="./">ZORNET<span>.RU</span></a><nav class="zn-nav"><a href="#">Скрипты</a><a href="#">Шаблоны</a><a href="#">Форум</a><a href="#">HTML и CSS</a><a href="#">jQuery</a><a href="#">News</a></nav><div aria-label="Выбор языка" class="zn-lang-switch"><a aria-current="page" class="is-active" href="./" hreflang="ru" lang="ru">RU</a><span aria-hidden="true" class="zn-lang-switch__sep">/</span><a href="./en/" hreflang="en" lang="en">EN</a></div><div class="zn-auth">Вход / Регистрация</div></div></header><div class="zn-page"><main class="zn-main">
 <div class="pr-wrap">
 <div class="pr-breadcrumbs"><a href="#">ZorNet.Ru — сайт для вебмастера</a><span>»</span><a href="#">Партнерские программы</a><span>»</span>Рейтинг 2026</div>
@@ -395,7 +402,7 @@ html{scroll-behavior:smooth}
 <section class="pr-panel">
 <div class="pr-table-wrap">
 <table class="pr-table">
-<thead><tr><th>Место</th><th>Партнерская программа</th><th>Рейтинг / отзывы</th><th class="pr-icon-col"><span aria-label="Офферы" title="Офферы"><svg aria-hidden="true" class="pr-offer-icon" viewbox="0 0 24 24"><path d="M5 7.5h14v11H5z"></path><path d="M8 7.5V5.5h8v2"></path><path d="M5 11h14"></path></svg></span></th><th class="pr-icon-col"><span aria-label="GEO" class="pr-col-icon" title="GEO"><svg aria-hidden="true" class="pr-icon pr-icon-geo" viewbox="0 0 24 24"><circle cx="12" cy="12" r="8.25"></circle><path d="M3.75 12h16.5M12 3.75c2.4 2.15 3.75 5.05 3.75 8.25S14.4 18.1 12 20.25M12 3.75C9.6 5.9 8.25 8.8 8.25 12S9.6 18.1 12 20.25"></path></svg></span></th><th>Мин. $</th></tr></thead>
+<thead><tr><th></th><th></th><th>Рейтинг / отзывы</th><th class="pr-icon-col"><span aria-label="Офферы" title="Офферы — предложения рекламодателей, доступные в партнерской программе."><svg aria-hidden="true" class="pr-offer-icon" viewbox="0 0 24 24"><path d="M5 7.5h14v11H5z"></path><path d="M8 7.5V5.5h8v2"></path><path d="M5 11h14"></path></svg></span></th><th class="pr-icon-col"><span aria-label="GEO" class="pr-col-icon" title="GEO — страны и регионы, из которых партнерская программа принимает трафик."><svg aria-hidden="true" class="pr-icon pr-icon-geo" viewbox="0 0 24 24"><circle cx="12" cy="12" r="8.25"></circle><path d="M3.75 12h16.5M12 3.75c2.4 2.15 3.75 5.05 3.75 8.25S14.4 18.1 12 20.25M12 3.75C9.6 5.9 8.25 8.8 8.25 12S9.6 18.1 12 20.25"></path></svg></span></th><th title="Мин. $ — минимальная сумма заработка для вывода средств из партнерской программы.">Мин. $</th></tr></thead>
 <tbody id="prDesktopRows"><tr aria-label="Подробнее о партнерской программе MTRAF" class="pr-row" data-href="#program-mtraf" data-name="mtraf" data-rank="1" data-rating="9.9" data-reviews="54" data-tags="cpa" role="link" tabindex="0">
 <td><div class="pr-rank pr-rank--top">1</div></td>
 <td><div class="pr-program"><span class="pr-logo">MT</span><span><b>MTRAF</b></span></div></td>
